@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Happy Birthday, My Love 🎂</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(to bottom right, #ffcccc, #ffe6e6);
+      font-family: 'Arial', sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      flex-direction: column;
+      overflow: hidden;
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 50px;
+      color: #ff3366;
+      margin-bottom: 10px;
+    }
+
+    p {
+      font-size: 20px;
+      max-width: 500px;
+      color: #333;
+      margin-bottom: 30px;
+    }
+
+    .heart {
+      width: 100px;
+      height: 90px;
+      position: relative;
+      background: red;
+      transform: rotate(-45deg);
+      animation: beat 1s infinite;
+    }
+
+    .heart::before,
+    .heart::after {
+      content: "";
+      position: absolute;
+      width: 100px;
+      height: 90px;
+      background: red;
+      border-radius: 50%;
+    }
+
+    .heart::before {
+      top: -50px;
+      left: 0;
+    }
+
+    .heart::after {
+      left: 50px;
+      top: 0;
+    }
+
+    @keyframes beat {
+      0%, 100% {
+        transform: scale(1) rotate(-45deg);
+      }
+      50% {
+        transform: scale(1.1) rotate(-45deg);
+      }
+    }
+
+    .footer {
+      position: absolute;
+      bottom: 20px;
+      font-size: 16px;
+      color: #777;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Happy Birthday, Love 🎉</h1>
+  <div class="heart"></div>
+  <p>
+    To the most amazing boyfriend in the world,<br>
+    I hope your day is as special as you are to me.<br>
+    Thank you for being my everything. I love you! 💖
+  </p>
+  <div class="footer">Made with 💌 by Your Girl</div>
+
+</body>
+</html>
